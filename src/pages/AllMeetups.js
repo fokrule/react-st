@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import  MeetupIList  from "../components/Meetups/MeetupList";
-function AllMeetupsPage() {
+export default function AllMeetupsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedMeetups, setLoadedMeetups] = useState([]);
   useEffect(() => {
@@ -41,5 +41,3 @@ function AllMeetupsPage() {
         </section>
     )
 }
-
-export default AllMeetupsPage

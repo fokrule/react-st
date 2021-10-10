@@ -1,7 +1,7 @@
 import { useHistory } from "react-router";
 import NewMeetupForm from "../components/Meetups/NewMeetupForm"
 
-function NewMeetupPage() {
+export default function NewMeetupPage() {
     const history = useHistory();
     function addMeetupHandker(meetupData) {
         fetch(
@@ -22,5 +22,4 @@ function NewMeetupPage() {
         <NewMeetupForm onAddMeetup={addMeetupHandker}/>
     </section>
 }
-
-export default NewMeetupPage
+ 
